@@ -23,7 +23,14 @@ const Header = () => {
                 {isAuth() && (
                     <Nav.Link href="/create">Create Notification</Nav.Link>
                 )}
+                <NavItem>
+                    <Nav.Link href="/preview">Preview Notification</Nav.Link>
+                </NavItem>
+                <NavItem>
+                    <Nav.Link href="/carousels">Notification Carousels</Nav.Link>
+                </NavItem>
                 </Nav>
+                  
                 <Nav>
                 {!isAuth() && (
                     <React.Fragment>

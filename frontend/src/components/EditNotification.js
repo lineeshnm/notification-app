@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NotificationForm } from "./NotificationForm";
 import { useRouteMatch, useHistory } from "react-router-dom";
-import { getNotification, updateNotification } from "./api";
+import { getNotification, updateNotification } from "../api";
 
 export const EditNotification = () => {
   const match = useRouteMatch()

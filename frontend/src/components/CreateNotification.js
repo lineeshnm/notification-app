@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { NotificationForm } from "./NotificationForm";
-import { createNotifications } from "./api";
+import { createNotifications } from "../api";
 import { useHistory } from "react-router-dom";
-import { isAuth } from './actions/auth';
+import { isAuth } from '../actions/auth';
 
 export const CreateNotification = () => {
   const history = useHistory()

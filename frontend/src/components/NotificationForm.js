@@ -41,10 +41,11 @@ export const NotificationForm = ({ notification, onSubmit }) => {
         <Form.Label>Notification Status</Form.Label>
         <Form.Control as="select" name="status" ref={register}>
           <option aria-label="None" value="" />
-          <option value="Progress">Progress</option>
           <option value="Scheduled">Scheduled</option>
-          <option value="Fixed">Fixed</option>
+          <option value="New">New</option>
+          <option value="Progress">Progress</option>
           <option value="Current">Current</option>
+          <option value="Fixed">Fixed</option>
           <option value="Completed">Completed</option>
         </Form.Control>
       </Form.Group>

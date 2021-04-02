@@ -23,12 +23,12 @@ const SignUp = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        // console.table({ name, email, password, error, loading, message, showForm });
+        console.table({ name, email, password, error, loading, message, showForm });
         setValues({ ...values, loading: true, error: false });
         const user = { name, email, password };
 
         signup(user).then(data => {
-            // console.log(data)
+            console.log(data)
             if (data.error) {
                 setValues({ ...values, error: data.error, loading: false });
             } else {
@@ -72,7 +72,7 @@ const SignUp = () => {
                             <Form.Label>Choose a password</Form.Label>
                             <Form.Control value={password} onChange={handleChange('password')} name="password" type="password" placeholder="Type your password" />
                         </Form.Group>
-                        <Button className="btn btn-primary">Signup</Button>
+                        <Button type="submit" className="btn btn-primary">Signup</Button>
                     </Form>
                 </div>
             </div>
